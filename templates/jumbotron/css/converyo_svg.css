@@ -1,0 +1,680 @@
+.svg_box svg {
+    width: 100%;
+}
+#blinking_btn_1 {
+    animation: blinking 1.6s ease infinite;
+}
+#blinking_btn_2 {
+    animation: blinking--shifted 1.6s ease infinite;
+}
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+    92% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes blinking--shifted {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#round_chart {
+    animation: spinning 1.8s linear infinite;
+    transform-origin: center;
+}
+_:-moz-tree-row(hover),
+#round_chart {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 15.5px 14.5px 0px;
+}
+#rullo_line_1,
+#rullo_line_2,
+#rullo_line_3,
+#rullo_line_4 {
+    animation: spinning 1.8s linear infinite;
+    transform-origin: center;
+}
+_:-moz-tree-row(hover),
+#rullo_line_1 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 52px 13px;
+}
+_:-moz-tree-row(hover),
+#rullo_line_2 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 120px 13px 0px;
+}
+_:-moz-tree-row(hover),
+#rullo_line_3 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 436px 13px 0px;
+}
+_:-moz-tree-row(hover),
+#rullo_line_4 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 504px 13px 0px;
+}
+@keyframes spinning {
+    0% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+#machine_line {
+    animation: machine_line_moving 55s linear infinite;
+}
+@keyframes machine_line_moving {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -1200.8;
+    }
+}
+#camino_top {
+    transition: .6s ease-out all;
+}
+.svg_box:hover #camino_top {
+    transform: translateY(-6px);
+}
+#marker_1 {
+    animation: spin_marker_1 2.8s ease infinite;
+    transform-origin: left bottom;
+}
+_:-moz-tree-row(hover),
+#marker_1 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 12px 14px;
+}
+@keyframes spin_marker_1 {
+    0% {
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: rotateZ(-50deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}
+#marker_2 {
+    animation: spin_marker_2 2.4s ease infinite;
+    transform-origin: left bottom;
+}
+_:-moz-tree-row(hover),
+#marker_2 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 12px 14px;
+}
+@keyframes spin_marker_2 {
+    0% {
+        transform: rotateZ(0);
+    }
+    30% {
+        transform: rotateZ(30deg);
+    }
+    50% {
+        transform: rotateZ(-50deg);
+    }
+    70% {
+        transform: rotateZ(5deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}
+#ranger_1 {
+    animation: sliding_1 2.8s ease infinite;
+    transform-origin: center;
+}
+@keyframes sliding_1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-13px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#ranger_2 {
+    animation: sliding_2 3.8s ease infinite;
+    transform-origin: center;
+}
+@keyframes sliding_2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-13px);
+    }
+    60% {
+        transform: translateY(6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#ranger_3 {
+    animation: sliding_3 4.8s ease infinite;
+    transform-origin: center;
+}
+@keyframes sliding_3 {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(1px);
+    }
+    20% {
+        transform: translateY(-1px);
+    }
+    30% {
+        transform: translateY(3px);
+    }
+    40% {
+        transform: translateY(-3px);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+    60% {
+        transform: translateY(7px);
+    }
+    70% {
+        transform: translateY(-13px);
+    }
+    80% {
+        transform: translateY(0px);
+    }
+    90% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#ranger_4 {
+    animation: sliding_4 1.2s ease infinite;
+    transform-origin: center;
+}
+@keyframes sliding_4 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#ranger_5 {
+    animation: sliding_5 2.8s ease infinite;
+    transform-origin: center;
+}
+@keyframes sliding_5 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(13px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#crazy_chart {
+    animation: crazy_chat_moving 999s ease infinite;
+}
+@keyframes crazy_chat_moving {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -99999;
+    }
+}
+#rect_ranger_1_1 {
+    animation: rect_ranger_1_1_grow 9s ease infinite;
+    transform-origin: bottom center;
+}
+_:-moz-tree-row(hover),
+#rect_ranger_1_1 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 0px 45px 0px;
+}
+@keyframes rect_ranger_1_1_grow {
+    0% {
+        transform: scaleY(0.4);
+    }
+    50% {
+        transform: scaleY(1.9);
+    }
+    100% {
+        transform: scaleY(0.4);
+    }
+}
+#rect_ranger_1_2 {
+    animation: rect_ranger_1_2_grow 7s ease infinite;
+    transform-origin: bottom center;
+}
+_:-moz-tree-row(hover),
+#rect_ranger_1_2 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 0px 45px 0px;
+}
+@keyframes rect_ranger_1_2_grow {
+    0% {
+        transform: scaleY(0.1);
+    }
+    50% {
+        transform: scaleY(1.3);
+    }
+    100% {
+        transform: scaleY(0.1);
+    }
+}
+#rect_ranger_1_3 {
+    animation: rect_ranger_1_3_grow 9s ease infinite;
+    transform-origin: bottom center;
+}
+_:-moz-tree-row(hover),
+#rect_ranger_1_3 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 0px 45px 0px;
+}
+@keyframes rect_ranger_1_3_grow {
+    0% {
+        transform: scaleY(0.4);
+    }
+    50% {
+        transform: scaleY(1.9);
+    }
+    100% {
+        transform: scaleY(0.4);
+    }
+}
+#rect_ranger_2_1 {
+    animation: rect_ranger_2_1_grow 4s ease infinite;
+    transform-origin: bottom center;
+}
+_:-moz-tree-row(hover),
+#rect_ranger_2_1 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 0px 17.4px 0px;
+}
+@keyframes rect_ranger_2_1_grow {
+    0% {
+        transform: scaleY(0.4);
+    }
+    50% {
+        transform: scaleY(1.9);
+    }
+    100% {
+        transform: scaleY(0.4);
+    }
+}
+#rect_ranger_2_2 {
+    animation: rect_ranger_2_2_grow 6s ease infinite;
+    transform-origin: bottom center;
+}
+_:-moz-tree-row(hover),
+#rect_ranger_2_2 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 0px 17.4px 0px;
+}
+@keyframes rect_ranger_2_2_grow {
+    0% {
+        transform: scaleY(0.1);
+    }
+    50% {
+        transform: scaleY(1.3);
+    }
+    100% {
+        transform: scaleY(0.1);
+    }
+}
+#rect_ranger_2_3 {
+    animation: rect_ranger_2_3_grow 9s ease infinite;
+    transform-origin: bottom center;
+}
+_:-moz-tree-row(hover),
+#rect_ranger_2_3 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 0 19px;
+}
+@keyframes rect_ranger_2_3_grow {
+    0% {
+        transform: scaleY(0.4);
+    }
+    50% {
+        transform: scaleY(1.2);
+    }
+    100% {
+        transform: scaleY(0.4);
+    }
+}
+#shape_chart_1 {
+    transform-origin: bottom center;
+    transform: scaleY(0.5);
+    transition: .5s ease-out all;
+}
+_:-moz-tree-row(hover),
+#shape_chart_1 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 0 17px;
+}
+.svg_box:hover #shape_chart_1 {
+    transform: scaleY(1.6);
+}
+#shape_chart_2 {
+    transform-origin: bottom center;
+    transform: scaleY(0.5);
+    transition: .5s .2s ease-out all;
+}
+_:-moz-tree-row(hover),
+#shape_chart_2 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 0 45px;
+}
+.svg_box:hover #shape_chart_2 {
+    transform: scaleY(1.6);
+}
+#box {
+    animation: flowing_box 10s 3s linear infinite;
+}
+#box_2 {
+    animation: flowing_box 10s 8s linear infinite;
+}
+@keyframes flowing_box {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    80% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+        transform: translateX(220px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+#box_closer_2 {
+    animation: box_close_2 10s 3s ease-out infinite;
+    transform-origin: bottom right;
+}
+_:-moz-tree-row(hover),
+#box_closer_2 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 80px 25px;
+}
+@keyframes box_close_2 {
+    0% {
+        transform: rotateZ(0);
+    }
+    75% {
+        transform: rotateZ(0deg);
+    }
+    85% {
+        transform: rotateZ(-40deg);
+    }
+    99% {
+        transform: rotateZ(-40deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}
+#box_closer_2_2 {
+    animation: box_close_2_2 10s 8s ease infinite;
+    transform-origin: bottom right;
+}
+_:-moz-tree-row(hover),
+#box_closer_2_2 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 80px 25px;
+}
+@keyframes box_close_2_2 {
+    0% {
+        transform: rotateZ(0);
+    }
+    65% {
+        transform: rotateZ(0deg);
+    }
+    85% {
+        transform: rotateZ(-43deg);
+    }
+    99% {
+        transform: rotateZ(-43deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}
+#box_closer_1 {
+    animation: box_close_1 10s 3s ease-out infinite;
+    transform-origin: bottom left;
+}
+_:-moz-tree-row(hover),
+#box_closer_1 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 3px 25px;
+}
+@keyframes box_close_1 {
+    0% {
+        transform: rotateZ(0);
+    }
+    68% {
+        transform: rotateZ(0deg);
+    }
+    85% {
+        transform: rotateZ(34deg);
+    }
+    99% {
+        transform: rotateZ(34deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}
+#box_closer_2_1 {
+    animation: box_close_2_1 10s 8s ease infinite;
+    transform-origin: bottom left;
+}
+_:-moz-tree-row(hover),
+#box_closer_2_1 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 3px 25px;
+}
+@keyframes box_close_2_1 {
+    0% {
+        transform: rotateZ(0);
+    }
+    60% {
+        transform: rotateZ(0deg);
+    }
+    85% {
+        transform: rotateZ(36deg);
+    }
+    99% {
+        transform: rotateZ(36deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}
+#doc_2 {
+    opacity: 0;
+    animation: doc_2_moving 10s 5s linear infinite;
+}
+_:-moz-tree-row(hover),
+#doc_2 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 19px 121px;
+}
+@keyframes doc_2_moving {
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(-3px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(0) translateY(-3px);
+    }
+    55% {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(100px) translateY(0);
+    }
+    91% {
+        opacity: 0;
+        transform: translateX(100px) translateY(0);
+    }
+    98% {
+        opacity: 0;
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0) translateY(-3px);
+    }
+}
+#doc_3 {
+    opacity: 0;
+    animation: doc_3_moving 5s 2.3s linear infinite;
+}
+_:-moz-tree-row(hover),
+#doc_3 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 9px 41px 0px;
+}
+@keyframes doc_3_moving {
+    0% {
+        opacity: 0;
+        transform: translateY(0) translateX(0);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(-5px) translateX(-3px);
+    }
+    97% {
+        opacity: 1;
+        transform: translateY(156px) translateX(100px) rotateZ(-31deg);
+    }
+    98% {
+        opacity: 0;
+        transform: translateY(156px) translateX(100px) rotateZ(-31deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0) translateX(0) rotateZ(0);
+    }
+}
+#doc {
+    opacity: 0;
+    animation: doc_moving 10s linear infinite;
+    transform-origin: center;
+}
+_:-moz-tree-row(hover),
+#doc {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: 42px 121px;
+}
+@keyframes doc_moving {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px) translateX(0);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(8px) translateX(0) rotateZ(19deg);
+    }
+    97% {
+        opacity: 1;
+        transform: translateY(8px) translateX(195.51px) rotateZ(19deg);
+    }
+    98% {
+        opacity: 0;
+        transform: translateY(8px) translateX(195.51px) rotateZ(19deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0) translateX(0) rotateZ(0);
+    }
+}
+#doc_4 {
+    opacity: 0;
+    animation: doc_4_moving 10s 1.5s linear infinite;
+}
+_:-moz-tree-row(hover),
+#doc_4 {
+    /*a wise solution is to use GSAP to set the property in Firefox, but it's CSS only project*/
+    
+    transform-origin: -121px 31px 0px;
+}
+@keyframes doc_4_moving {
+    0% {
+        opacity: 0;
+        transform: translateY(0) translateX(0);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(-4px) translateX(-5px) rotateZ(0);
+    }
+    97% {
+        opacity: 1;
+        transform: translateY(100px) translateX(240px) rotateZ(21deg);
+    }
+    98% {
+        opacity: 0;
+        transform: translateY(100px) translateX(240px) rotateZ(21deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0) translateX(0) rotateZ(0);
+    }
+}

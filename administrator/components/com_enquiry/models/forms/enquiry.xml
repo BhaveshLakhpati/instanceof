@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="employee_count" default="0" label="COM_ENQUIRY_FORM_LBL_ENQUIRY_EMPLOYEE_COUNT" description="COM_ENQUIRY_FORM_DESC_ENQUIRY_EMPLOYEE_COUNT" hidden="true" hint="COM_ENQUIRY_FORM_LBL_ENQUIRY_EMPLOYEE_COUNT"/>
+    <field name="using_biometric_machine" default="1" label="COM_ENQUIRY_FORM_LBL_ENQUIRY_USING_BIOMETRIC_MACHINE" description="COM_ENQUIRY_FORM_DESC_ENQUIRY_USING_BIOMETRIC_MACHINE" hidden="true" hint="COM_ENQUIRY_FORM_LBL_ENQUIRY_USING_BIOMETRIC_MACHINE"/>
+    <field name="biometric_machine_model" default="0" label="COM_ENQUIRY_FORM_LBL_ENQUIRY_BIOMETRIC_MACHINE_MODEL" description="COM_ENQUIRY_FORM_DESC_ENQUIRY_BIOMETRIC_MACHINE_MODEL" hidden="true" hint="COM_ENQUIRY_FORM_LBL_ENQUIRY_BIOMETRIC_MACHINE_MODEL"/>
+    <field name="salary_processing" default="0000-00-00 00:00:00" label="COM_ENQUIRY_FORM_LBL_ENQUIRY_SALARY_PROCESSING" description="COM_ENQUIRY_FORM_DESC_ENQUIRY_SALARY_PROCESSING" hidden="true" hint="COM_ENQUIRY_FORM_LBL_ENQUIRY_SALARY_PROCESSING"/>
+    <field name="solution_required" default="0" label="COM_ENQUIRY_FORM_LBL_ENQUIRY_SOLUTION_REQUIRED" description="COM_ENQUIRY_FORM_DESC_ENQUIRY_SOLUTION_REQUIRED" hidden="true" hint="COM_ENQUIRY_FORM_LBL_ENQUIRY_SOLUTION_REQUIRED"/>
+    <field name="internet_connectivity" default="0" label="COM_ENQUIRY_FORM_LBL_ENQUIRY_INTERNET_CONNECTIVITY" description="COM_ENQUIRY_FORM_DESC_ENQUIRY_INTERNET_CONNECTIVITY" hidden="true" hint="COM_ENQUIRY_FORM_LBL_ENQUIRY_INTERNET_CONNECTIVITY"/>
+    <field name="computer_at_office_location" label="COM_ENQUIRY_FORM_LBL_ENQUIRY_COMPUTER_AT_OFFICE_LOCATION" description="COM_ENQUIRY_FORM_DESC_ENQUIRY_COMPUTER_AT_OFFICE_LOCATION" hint="COM_ENQUIRY_FORM_LBL_ENQUIRY_COMPUTER_AT_OFFICE_LOCATION"/>
+    <field name="name" label="COM_ENQUIRY_FORM_LBL_ENQUIRY_NAME" description="COM_ENQUIRY_FORM_DESC_ENQUIRY_NAME" hint="COM_ENQUIRY_FORM_LBL_ENQUIRY_NAME"/>
+    <field name="email" label="COM_ENQUIRY_FORM_LBL_ENQUIRY_EMAIL" description="COM_ENQUIRY_FORM_DESC_ENQUIRY_EMAIL" hint="COM_ENQUIRY_FORM_LBL_ENQUIRY_EMAIL"/>
+    <field name="mobile" label="COM_ENQUIRY_FORM_LBL_ENQUIRY_MOBILE" description="COM_ENQUIRY_FORM_DESC_ENQUIRY_MOBILE" hint="COM_ENQUIRY_FORM_LBL_ENQUIRY_MOBILE"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>

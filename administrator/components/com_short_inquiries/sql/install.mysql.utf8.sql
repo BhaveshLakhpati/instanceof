@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS `#__short_inquiries` (
+`id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+
+`name` VARCHAR(100)  NOT NULL ,
+`email` VARCHAR(100)  NOT NULL ,
+`phone` INT(10)  NOT NULL ,
+`date_of_submission` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (`id`)
+) DEFAULT COLLATE=utf8mb4_unicode_ci;
+

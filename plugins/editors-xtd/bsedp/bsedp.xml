@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" method="upgrade" group="editors-xtd">
+        <name>Bootstrap Row Builder</name>
+        <author>eXtro-media GbR</author>
+        <creationDate>Juli 2015</creationDate>
+        <copyright>(c) eXtro-media GbR, 2015. All rights reserved.</copyright>
+        <license>GNU/GPL v3 or later http://www.gnu.org/licenses/gpl-3.0.html</license>
+        <authorEmail>info@extro-media.de</authorEmail>
+        <authorUrl>https://www.extro-media.de</authorUrl>
+        <version>1.0.0</version>
+        <description><![CDATA[
+          <div class="alert">
+          <h2>This Plugin allows to easily insert Bootstrap 2 / 3 Grid definitions - This helps you to create a BS based article faster.</h2>
+          <br />
+          <p><strong>If you use <a href="" target="_blank">Bootstrap Row Builder</a>, please post a rating and a review at the Joomla! Extensions Directory.</strong></p>
+          <br />
+          <p>Please read the extension's <a href="http://www.extro-media.de/en/software-en/quickstart-guides.html" target="_blank">users manual.</a></p>
+          <br />
+          <p>Don't forget to activate the plugin, and also select which bootstrap version you are using.</p>
+          <br /><br />
+          <p>More useful eXtensions by <a href="http://www.extro-media.de/" target="_blank">eXtro-media.de</a>:</p>
+          <div id="extro" class="klasse" >
+          </div>
+          </div>
+	        <style>
+	        .klasse { width: auto; height: auto; display: block; margin: 15px 0; } 
+          </style>
+          <script src="http://updates.extro-media.de/script.js" type="text/javascript">
+          </script>
+	        ]]>
+        </description>
+        <files>
+            <filename plugin="bsedp">bsedp.php</filename>
+            <filename>dialog.php</filename>
+            <filename>bsedp.xml</filename>
+        </files>
+        <languages>
+          <language tag="de-DE">de-DE.plg_bsedp.ini</language>
+          <language tag="de-DE">de-DE.plg_editors-xtd_bsedp.ini</language>
+          <language tag="en-GB">en-GB.plg_bsedp.ini</language>
+          <language tag="en-GB">en-GB.plg_editors-xtd_bsedp.ini</language>
+        </languages>
+        <config>
+          <fields name="params">
+            <fieldset name="basic">
+              <field name="compatmode" type="radio" default="0" description="PLG_BSEDP_CM_DESC" label="PLG_BSEDP_CM" class="btn-group">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+              </field>
+            </fieldset>
+          </fields>
+        </config>
+</extension>

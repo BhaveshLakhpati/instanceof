@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	version="3.9"
+	type="template"
+	method="upgrade"
+	client="site">
+
+	<name>Jumbotron</name>
+	<creationDate>03/03/2019</creationDate>
+	<author>instanceOf</author>
+	<authorEmail>support@instanceof.com</authorEmail>
+	<authorUrl>http://instanceof.in</authorUrl>
+	<copyright>Copyright 2019</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Bootstrap template for Jumbotron</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>menu</position>
+		<position>showcase</position>
+		<position>footer</position>
+		<position>box1</position>
+		<position>box2</position>
+		<position>box3</position>
+	</positions>
+
+	<config>
+		<fields name="params">
+			<fieldset name="general" label="General">
+				<field 
+					name="logo_text" 
+					type="text" 
+					label="Logo Text" 
+					description="Edit Logo Text"
+				/>
+				<field 
+					name="copyright_text" 
+					type="text" 
+					label="Copyright Text" 
+					description="Edit Copyright Text"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

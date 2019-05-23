@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="name" default="0" label="COM_SHORT_INQUIRIES_FORM_LBL_INQUIRY_NAME" description="COM_SHORT_INQUIRIES_FORM_DESC_INQUIRY_NAME" hidden="true" hint="COM_SHORT_INQUIRIES_FORM_LBL_INQUIRY_NAME"/>
+    <field name="email" required="true" label="COM_SHORT_INQUIRIES_FORM_LBL_INQUIRY_EMAIL" description="COM_SHORT_INQUIRIES_FORM_DESC_INQUIRY_EMAIL" hidden="true" hint="COM_SHORT_INQUIRIES_FORM_LBL_INQUIRY_EMAIL"/>
+    <field name="phone" required="true" default="0" label="COM_SHORT_INQUIRIES_FORM_LBL_INQUIRY_PHONE" description="COM_SHORT_INQUIRIES_FORM_DESC_INQUIRY_PHONE" hidden="true" hint="COM_SHORT_INQUIRIES_FORM_LBL_INQUIRY_PHONE"/>
+    <field name="date_of_submission" default="CURRENT_TIMESTAMP" type="calendar" class="inputbox" format="%Y-%m-%d %H:%M:%S" showtime="true" translateformat="true" label="COM_SHORT_INQUIRIES_FORM_LBL_INQUIRY_DATE_OF_SUBMISSION" description="COM_SHORT_INQUIRIES_FORM_DESC_INQUIRY_DATE_OF_SUBMISSION" hidden="true" hint="COM_SHORT_INQUIRIES_FORM_LBL_INQUIRY_DATE_OF_SUBMISSION"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>

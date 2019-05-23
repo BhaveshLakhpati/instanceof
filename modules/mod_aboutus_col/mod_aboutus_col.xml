@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>About Us Rows and Cols</name>
+    <author>instanceof</author>
+    <creationDate>March 2019</creationDate>
+    <copyright>Copyright (C) 2019 JoomDigi</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>support@instance.in</authorEmail>
+    <authorUrl>www.instanceof.in</authorUrl>
+    <version>1.4</version>
+    <description>Jumbotron with screenshot</description>
+    <files>
+        <filename module="mod_aboutus_col">mod_aboutus_col.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_aboutus_col.xml</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="rows"
+                    type="repeatable"
+                    icon="list"
+                    label="Row">
+                    <fieldset hidden="true" name="list_templates_modal" repeat="true">
+                        <field name="cols"
+                            label="Col"
+                            size="30"
+                            type="text" />
+                    </fieldset>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

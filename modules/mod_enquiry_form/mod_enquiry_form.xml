@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>Enquiry Form Module</name>
+    <author>instanceof</author>
+    <creationDate>March 2019</creationDate>
+    <copyright>Copyright (C) 2019 JoomDigi</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>support@instance.in</authorEmail>
+    <authorUrl>www.instanceof.in</authorUrl>
+    <version>1.4</version>
+    <description>Module For Enquiry Form</description>
+    <files>
+        <filename module="mod_enquiry_form">mod_enquiry_form.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_enquiry_form.xml</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">   
+            <fieldset name="basic">
+                <field 
+                    name="background_image" 
+                    type="media" 
+                    label="Background Image" 
+                    description="">
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
